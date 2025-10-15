@@ -1,0 +1,28 @@
+{
+  "name": "brandlift",
+  "version": "1.0.0",
+  "description": "A project using Tailwind CSS and PostCSS.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "postcss src/styles.css -o public/styles.css",
+    "watch": "postcss src/styles.css -o public/styles.css --watch",
+    "start": "npm run build && node src/index.ts"
+  },
+  "keywords": [
+    "tailwindcss",
+    "postcss",
+    "css",
+    "frontend"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss-animate": "^1.0.0",
+    "@tailwindcss/aspect-ratio": "^0.2.0"
+  }
+}
